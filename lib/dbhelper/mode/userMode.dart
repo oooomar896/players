@@ -12,6 +12,7 @@ class MongoModelUsers {
   String details;
   String nameplae;
   String urlImage;
+  String typeplay;
 
   MongoModelUsers({
     required this.id,
@@ -19,6 +20,7 @@ class MongoModelUsers {
     required this.details,
     required this.nameplae,
     required this.urlImage,
+    required this.typeplay,
   });
 
   factory MongoModelUsers.fromJson(Map<String, dynamic> json) {
@@ -30,6 +32,7 @@ class MongoModelUsers {
       details: json["details"],
       nameplae: json["nameplae"],
       urlImage: json["urlImage"],
+      typeplay: json["typeplay"],
     );
   }
 
@@ -39,5 +42,6 @@ class MongoModelUsers {
         "city": city,
         "details": details,
         "urlImage": urlImage,
+        "typeplay": typeplay,
       };
 }
